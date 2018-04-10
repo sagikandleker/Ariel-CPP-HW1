@@ -45,8 +45,6 @@ static int count(){
 vector<Member*> Member::allUsers = {};
 
 Member::Member(){
-    set<Member*> following;
-    set<Member*> followers;
     allUsers.push_back(this);
 }
 
