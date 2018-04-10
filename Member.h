@@ -1,3 +1,9 @@
+#include <vector>
+#include <set>
+#include <iostream>
+
+using namespace std;
+
 class Member{
 
 public:
@@ -39,6 +45,8 @@ static int count(){
 vector<Member*> Member::allUsers = {};
 
 Member::Member(){
+    set<Member*> following;
+    set<Member*> followers;
     allUsers.push_back(this);
 }
 
