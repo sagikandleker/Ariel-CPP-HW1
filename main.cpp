@@ -1,6 +1,8 @@
 #include <vector>
 #include <set>
 #include <iostream>
+#include "Member.h"
+
 using namespace std;
 
 class user{
