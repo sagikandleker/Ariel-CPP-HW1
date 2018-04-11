@@ -36,10 +36,11 @@ for(unsigned int i = 0; i < members.size(); i++)
 int des_index = 0;
 for(unsigned int j = 0; j < members.size(); j++)
 {
-    if(this == members.at(j)){
-            des_index = j;
-        }
+    if(this == members.at(j))
+    {
+        des_index = j;
     }
+}
 
     members.erase(members.begin() + des_index);
 
@@ -72,12 +73,10 @@ int Member::numFollowing()
  */
 void Member::follow(Member &m)
 {
-    if(this != &m){
+    if(this != &m)
+    {
         this->following.insert(&m);
         m.followers.insert(this);
-    }
-    else{
-        cout << "You can't follow yourself!" << endl;
     }
 }
 
@@ -89,12 +88,10 @@ void Member::follow(Member &m)
  */
 void Member::unfollow(Member& m)
 {
-    if(this != &m){
+    if(this != &m)
+    {
         this->following.erase(&m);
         m.followers.erase(this);
-    }
-    else{
-        cout << "You can't unfollow yourself!" << endl;
     }
 }
 
