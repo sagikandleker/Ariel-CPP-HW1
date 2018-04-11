@@ -14,8 +14,6 @@ vector<Member*> Member::members = {};
  */
 Member::Member()
 {
-    set<Member*> following;
-    set<Member*> followers;
     members.push_back(this);
 }
 
@@ -47,7 +45,6 @@ for(unsigned int j = 0; j < members.size(); j++)
 }
 
 /**
- * /**
  * numFollowers function.
  * return the size of followers list for "this" Member.
  */
