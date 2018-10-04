@@ -1,4 +1,4 @@
-# Social_Network
-This is a assignment of C++ course for Ariel University.<br />
-This assignment was to create Mini Social Network with engagement beside Ampersand and Pointers.<br />
-The code (c++) Written in Visual Studio Code  (www.visualstudio.com).<br />
+Mini Social Network
+Homework #1, Ariel University.<br />
+This assignment was to create "Mini Social Network" while using ampersand and pointers.<br />
+The code is written in "Visual Studio Code" (www.visualstudio.com).<br />
